@@ -1,5 +1,5 @@
 <template>
-  <div id="translateOutput">
+  <div id="translateOutput" class="mt-5">
 	
   </div>
 </template>
@@ -14,6 +14,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+	*{
+		color:#42B983;
+		font-size: 2em;
+	}
 </style>
