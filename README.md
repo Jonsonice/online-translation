@@ -18,4 +18,10 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader)
+
+需要注意的坑
+
+在 npm run build 之前要将 config/index.js 里边 build 配置里边的 assetsPublicPath: '/' 改成 assetsPublicPath: './'
+将 webpack.prod.conf.js 中的 removeAttributeQuotes 改为 false
+
