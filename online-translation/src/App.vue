@@ -16,7 +16,11 @@ export default {
   },
 	methods:{
 		translateText:function(text){
-			alert(text);
+			// alert(text);
+			this.$http.get('https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20181220T142434Z.bd4bff0edd6e54be.564cbaddc02ba4ade4b1a35d33a70bc3099ea318&lang=en&text='+text)
+			.then((response)=>{
+				console.log(response.body.text[0]);
+			})
 		}
 	}
 }
